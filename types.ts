@@ -124,4 +124,4 @@ export type NowFn = (
     event: APIGatewayProxyEvent;
     context: Context;
   }
-) => void | Promise<void>;
+) => any | Promise<any>;
