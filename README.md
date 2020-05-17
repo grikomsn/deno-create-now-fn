@@ -3,7 +3,6 @@
 Create lambda handlers for [Deno](https://deno.land) with [`@vercel/node`][vercel-node]-like APIs
 
 ![release](https://badgen.net/github/release/grikomsn/deno-create-now-fn)
-![downloads](https://badgen.net/github/assets-dl/grikomsn/deno-create-now-fn)
 
 ---
 
