@@ -12,7 +12,7 @@ export const createNowFn = (fn: NowFn) => {
     body: "",
   };
 
-  const handler: HandlerFn = (event, context) => {
+  const handler: HandlerFn = async (event, context) => {
     const request: NowRequest = parseEventBody(event);
 
     const response: NowResponse = {
@@ -42,7 +42,7 @@ export const createNowFn = (fn: NowFn) => {
       },
     };
 
-    fn(request, response, { context, event });
+    await fn(request, response, { context, event });
 
     return payload;
   };

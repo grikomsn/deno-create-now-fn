@@ -115,7 +115,7 @@ export interface NowResponse {
 export type HandlerFn = (
   event: APIGatewayProxyEvent,
   context: Context
-) => APIGatewayProxyResult;
+) => APIGatewayProxyResult | Promise<APIGatewayProxyResult>;
 
 export type NowFn = (
   request: NowRequest,
@@ -124,4 +124,4 @@ export type NowFn = (
     event: APIGatewayProxyEvent;
     context: Context;
   }
-) => void;
+) => void | Promise<void>;
