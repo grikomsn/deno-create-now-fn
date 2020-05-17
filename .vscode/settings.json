@@ -1,0 +1,5 @@
+{
+  "deno.enable": true,
+  "typescriptHero.imports.disableImportRemovalOnOrganize": true,
+  "typescriptHero.imports.stringQuoteStyle": "\""
+}

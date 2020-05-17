@@ -1,0 +1,19 @@
+{
+  "functions": {
+    "api/**/*.ts": {
+      "runtime": "now-deno@0.4.0"
+    }
+  },
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://github.com/grikomsn/deno-create-now-fn"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/hello/:name",
+      "destination": "/api/hello"
+    }
+  ]
+}
