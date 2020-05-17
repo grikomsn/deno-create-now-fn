@@ -30,7 +30,7 @@ Create lambda handlers for [Deno](https://deno.land) with [`@vercel/node`][verce
 With `create-now-fn`, you can now write like this:
 
 ```ts
-import { createNowFn } from "https://denopkg.com/grikomsn/deno-create-now-fn/mod.ts";
+import { createNowFn } from "https://griko.dev/deno-create-now-fn.ts";
 
 export const handler = createNowFn((req, res) => {
   res.json({ hello: "world" });
@@ -44,7 +44,7 @@ import {
   APIGatewayProxyEvent,
   APIGatewayProxyResult,
   Context,
-} from "https://deno.land/x/lambda/mod.ts";
+} from "https://deno.land/x/lambda@1.0.0/mod.ts";
 
 export const handler = async (
   event: APIGatewayProxyEvent,
@@ -69,7 +69,7 @@ import {
   APIGatewayProxyEvent,
   APIGatewayProxyResult,
   Context,
-} from "../deps.ts";
+} from "https://deno.land/x/lambda@1.0.0/mod.ts";
 
 export const handler = async (
   event: APIGatewayProxyEvent,
@@ -104,7 +104,7 @@ export const handler = async (
 With `create-now-fn`, you can use `req` and `res`, also `event` and `context` if needed:
 
 ```ts
-import { createNowFn } from "https://denopkg.com/grikomsn/deno-create-now-fn/mod.ts";
+import { createNowFn } from "https://griko.dev/deno-create-now-fn.ts";
 
 export const handler = createNowFn((req, res, internal) => {
   res.json({ req, res, internal });
