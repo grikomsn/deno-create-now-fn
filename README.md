@@ -27,7 +27,6 @@
 ## Imports
 
 - <https://denopkg.com/grikomsn/deno-create-now-fn/mod.ts>
-- <https://griko.dev/deno-create-now-fn.ts>
 
 ## Quick example
 
